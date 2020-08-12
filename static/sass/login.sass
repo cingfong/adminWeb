@@ -1,0 +1,33 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+body
+    min-height: 100vh
+    background-color: #243443
+    display: flex
+    justify-content: center
+    .login
+        top: 50%
+        position: absolute
+        transform: translateY(-50%)
+        background-color: #efefef
+        width: 450px
+        // height: 250px
+        padding: 40px 80px
+        padding-top: 80px
+        img
+            top: -80px
+            left: 50%
+            position: absolute
+            transform: translate(-50%, -70%)
+            width: 160px
+            height: 160px
+            border-radius: 50%
+            border: solid 10px #fff
+        .login-wrap
+            .btn
+                width: 100%

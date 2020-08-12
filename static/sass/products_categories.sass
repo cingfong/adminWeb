@@ -1,0 +1,103 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+a
+    &:hover
+        text-decoration: none
+body,html
+body
+    .content
+        padding-left: 230px
+        padding-top: 80px
+        background-color: #eee
+        min-height: 100vh
+        .title
+            z-index: 10
+            width: calc(100% - 230px )
+            display: flex
+            border-bottom: solid 1px #ddd
+            flex-direction: row
+            position: absolute
+            .title_li
+                color: #333
+                width: 40%
+                flex-shrink: 0
+                text-align: center
+                padding: 10px 0px
+                color: #aaa
+            .active
+                color: #333
+        .table
+            width: 100%
+            .tab-pane
+            .left_form
+                width: 45%
+                float: left
+                color: #333
+                margin: 80px 0px
+                h3
+                    font-size: 32px
+                h5
+                    font-size: 22px
+                form
+                    margin-top: 40px
+                    p
+                    input
+                        width: 250px
+                        margin-left: 30px
+                        background-color: rgba(white,0)
+                        border: 0px
+                        border-radius: 0px
+                        border-bottom: solid 1px #333
+                        color: #999
+                    button
+                        margin-top: 40px
+                        padding: 5px 15px
+                        margin-left: 20px
+
+            .right_form
+                width: 50%
+                margin: 80px 0px
+                float: left
+                table
+                    width: 100%
+                    th
+                        border: solid 1px black
+                        padding: 10px
+                        font-size: 16px
+                        font-weight: 300
+                    thead
+                        width: 100%
+                        tr
+                            width: 100%
+                            .checkbox
+                                width: 30px
+                                flex-basis: 0
+                            .th_btn
+                                width: 130px
+                    tbody
+                        width: 100%
+                        button
+                            font-size: 12px
+                            padding: 3px 8px
+                            margin: 0px 5px
+                .btn_action
+                    margin: 10px 0px
+                    button
+                        font-size: 14px
+@keyframes openI
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes closeI
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+

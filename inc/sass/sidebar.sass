@@ -1,0 +1,85 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+body
+    .sidebar
+        z-index: 10
+        position: absolute
+        left: 0px
+        top: 0px
+        height: 100%
+        min-height: 100vh
+        width: 200px
+        background-color: #2f4050
+        .list-group
+            list-style: none
+            width: 100%
+            .list_title
+                background-color: #243443
+                .logo
+                    margin: 20px auto
+                    width: 100px
+                    img
+                        width: 100%
+                p
+                    display: block
+                    margin: 20px 0px
+                    padding-bottom: 10px
+                    text-align: center
+                    color: #ccc
+                    font-size: 18px
+                    font-weight: 100
+                    width: 100%
+            .list_child
+                .lili_item
+                    padding: 10px 10px
+                    background-color: #243443
+                    letter-spacing: 1px
+                    font-weight: 100
+                    font-size: 12px
+                    color: #aaa
+                    cursor: pointer
+                .active_li
+                    color: #eee
+            .list
+                cursor: pointer
+                background-color: rgba(white,0)
+                color: #aaa
+                letter-spacing: 1px
+                font-weight: 100
+                font-size: 14px
+                border: 0px
+                padding: 10px
+                i
+                    position: absolute
+                    display: inline-block
+                    font-size: 16px
+                    left: 150px
+                .open_i
+                    animation: openI 0.3s forwards
+                .close_i
+                    animation: closeI 0.3s forwards
+
+            .liOne
+                border-top: solid 20px #2f4050
+            .active
+                background-color: rgba(#666,0.5)
+                // box-shadow: 0px 20px 10px 5px 5px red inset
+                // box-shadow: 0px 2px 2px #333333
+                color: #eee
+@keyframes openI
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes closeI
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+

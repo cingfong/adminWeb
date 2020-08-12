@@ -1,0 +1,107 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+a
+    &:hover
+        text-decoration: none
+body,html
+body
+    .content
+        padding-left: 230px
+        padding-top: 80px
+        background-color: #eee
+        min-height: 100vh
+        display: flex
+        .left_form
+            width: 40%
+            color: #333
+            margin: 40px 0px
+            h3
+                font-size: 32px
+            h5
+                font-size: 22px
+            form
+                margin-top: 40px
+                p
+                    margin-top: 20px
+                input
+                    width: 250px
+                    margin-left: 30px
+                    background-color: rgba(white,0)
+                    border: 0px
+                    border-radius: 0px
+                    border-bottom: solid 1px #333
+                .look_img
+                    margin-bottom: 20px
+                .number
+                    &::-webkit-outer-spin-button
+                        -webkit-appearance: none
+                    &::-webkit-inner-spin-button
+                        -webkit-appearance: none
+                    [type="number"]
+                        -moz-appearance: textfield
+                .re_web
+                    margin-top: 40px
+                    padding: 5px 15px
+                    margin-left: 20px
+                button
+                    margin-top: 40px
+                    padding: 5px 15px
+                    margin-left: 20px
+
+        .right_form
+            width: 60%
+            margin: 40px 0px
+            padding-right: 40px
+            table
+                width: 100%
+                th
+                    border: solid 1px black
+                    padding: 10px
+                    font-size: 16px
+                    font-weight: 300
+                    text-align: center
+                .see_img
+                    width: 150px
+                    img
+                        width: 100%
+                .products_name
+                    width: 100px
+                .num
+                    width: 50px
+                thead
+                    width: 100%
+                    tr
+                        width: 100%
+                        .checkbox
+                            width: 30px
+                            flex-basis: 0
+                        .th_btn
+                            width: 130px
+                tbody
+                    width: 100%
+                    tr
+                    button
+                        font-size: 12px
+                        padding: 3px 8px
+                        margin: 0px 5px
+            .btn_action
+                margin: 10px 0px
+                button
+                    font-size: 14px
+@keyframes openI
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes closeI
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+

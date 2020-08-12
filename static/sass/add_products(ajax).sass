@@ -1,0 +1,77 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+a
+    &:hover
+        text-decoration: none
+body,html
+body
+    .content
+        padding-left: 230px
+        padding-top: 80px
+        background-color: #eee
+        min-height: 100vh
+        .title
+            width: 100%
+            display: flex
+            border-bottom: solid 1px #ddd
+            flex-direction: row
+            .title_li
+                color: #333
+                width: 20%
+                flex-shrink: 0
+                text-align: center
+                padding: 10px 0px
+                color: #aaa
+            .active
+                color: #333
+                // background-color: rgba(#fff, 0.8)
+        .table
+            .from
+                margin: 20px
+                &:first-child
+                    margin-top: 80px
+            p
+                display: inline-block
+                color: #333
+                margin-right: 40px
+                width: 150px
+            input
+                border: 0px
+                background-color: rgba(white,0)
+                border-bottom: 1px solid #777
+            select
+                border: 0px
+                background-color: rgba(white,0)
+                border-bottom: 1px solid #777
+                width: 150px
+                padding: 10px 0px
+                border-radius: 0px
+            .color_photo
+                .color_title
+                    width: 100%
+                .photo_file
+                    width: 100%
+                    padding-left: 50px
+                    p
+                        width: 100%
+                    input
+                        margin: 20px
+
+
+@keyframes openI
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes closeI
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+

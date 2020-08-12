@@ -1,0 +1,130 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+a
+    &:hover
+        text-decoration: none
+body,html
+body
+    .content
+        padding-left: 230px
+        padding-top: 80px
+        background-color: #eee
+        min-height: 100vh
+        padding-bottom: 80px
+        .title
+            width: 100%
+            display: flex
+            border-bottom: solid 1px #ddd
+            flex-direction: row
+            .title_li
+                color: #333
+                width: 20%
+                flex-shrink: 0
+                text-align: center
+                padding: 10px 0px
+                color: #aaa
+            .active
+                color: #333
+                // background-color: rgba(#fff, 0.8)
+        .table
+            padding: 40px 20px
+            p
+                display: inline-block
+                color: #333
+                margin-right: 40px
+                width: 150px
+                margin-bottom: 0px
+            .form-group
+                margin: 20px
+                &:first-child
+                    margin-top: 80px
+                .product_color
+                    margin: 20px 0px
+                .delbutn
+                    margin: 0px 15px
+                    display: inline-block
+                    color: #721c24
+                    padding: 8px 15px
+                    box-shadow: 0px 3px 3px 3px #ddd
+                    width: auto
+                    cursor: pointer
+                .blockColor
+                    width: 30px
+                    height: 30px
+                    display: inline-block
+                    opacity: 0
+                    left: -30px
+                .error_color
+                    display: none
+                    position: absolute
+                    top: 100%
+                    color: red
+                    font-size: 16px
+                    width: auto
+                    left: 190px
+                select
+                    border: 0px
+                    background-color: rgba(white,0)
+                    width: 350px
+                    -webkit-appearance: none
+                    border-radius: 0px
+                    border-bottom: 1px solid #777
+                    cursor: pointer
+            .up_img
+                margin-top: 20px
+            .up_live_img
+                margin: 20px 0px
+            .product_live_img
+                margin-top: 20px
+            input
+                width: 350px
+                border: 0px
+                background-color: rgba(white,0)
+                border-bottom: 1px solid #777
+            .color_photo
+                .color_title
+                    width: 100%
+                .photo_file
+                    width: 100%
+                    padding-left: 50px
+                    .product_thumbnail
+                        margin-top: 20px
+                    p
+                        width: 100%
+                    input
+                        margin: 20px
+                        display: block
+            .live_photo
+                .live_title
+                    width: 100%
+                .live_photo_file
+                    width: 100%
+                    padding-left: 50px
+                    .product_live_img
+                        margin-top: 20px
+                    p
+                        width: 100%
+                    input
+                        margin: 20px
+                        display: block
+            .send
+                position: absolute
+                top: 100%
+
+@keyframes openI
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes closeI
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+

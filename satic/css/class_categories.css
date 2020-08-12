@@ -1,0 +1,80 @@
+* {
+  position: relative;
+  margin: 0px;
+  padding: 0px; }
+
+a:hover {
+  text-decoration: none; }
+
+body .content {
+  padding-left: 230px;
+  padding-top: 80px;
+  background-color: #eee;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  body .content .left_form {
+    width: 40%;
+    color: #333;
+    margin: 40px 0px; }
+    body .content .left_form h3 {
+      font-size: 32px; }
+    body .content .left_form h5 {
+      font-size: 22px; }
+    body .content .left_form form {
+      margin-top: 40px; }
+      body .content .left_form form .remove {
+        color: #333; }
+      body .content .left_form form input {
+        width: 250px;
+        margin-left: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px;
+        border-radius: 0px;
+        border-bottom: solid 1px #333;
+        color: #999; }
+      body .content .left_form form button {
+        margin-top: 40px;
+        padding: 5px 15px;
+        margin-left: 20px; }
+      body .content .left_form form .re_web {
+        margin-top: 40px;
+        padding: 5px 15px;
+        margin-left: 20px; }
+    body .content .left_form .alert {
+      margin-top: -60px;
+      width: 200%;
+      position: absolute; }
+      body .content .left_form .alert strong {
+        font-size: 20px; }
+  body .content .right_form {
+    width: 60%;
+    margin: 40px 0px;
+    padding-right: 40px; }
+    body .content .right_form table {
+      width: 100%; }
+      body .content .right_form table th {
+        border: solid 1px black;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 300; }
+      body .content .right_form table thead {
+        width: 100%; }
+        body .content .right_form table thead tr {
+          width: 100%; }
+          body .content .right_form table thead tr .checkbox {
+            width: 30px;
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0; }
+          body .content .right_form table thead tr .th_btn {
+            width: 130px;
+            color: #fff; }
+      body .content .right_form table tbody {
+        width: 100%; }
+        body .content .right_form table tbody tr th .btn {
+          margin: 0px 10px; }
+    body .content .right_form .btn_action {
+      margin: 10px 0px; }
+      body .content .right_form .btn_action .btn {
+        color: #fff; }

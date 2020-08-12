@@ -1,0 +1,116 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+a
+    &:hover
+        text-decoration: none
+body,html
+body
+    .content
+        padding-left: 230px
+        padding-top: 80px
+        background-color: #eee
+        min-height: 100vh
+        display: flex
+        .left_form
+            width: 40%
+            color: #333
+            margin: 40px 0px
+            h3
+                font-size: 32px
+            h5
+                font-size: 22px
+            form
+                margin-top: 40px
+                p
+                    margin-top: 20px
+                input,label
+                    width: 250px
+                    margin-left: 30px
+                    background-color: rgba(white,0)
+                    border: 0px
+                    border-radius: 0px
+                    border-bottom: solid 1px #333
+                    // color: #999
+                label
+                    display: inline-block
+                    width: auto
+                    border: solid 1px #007bff
+                    padding: 3px 5px
+                    color: #007bff
+                button
+                    margin-top: 40px
+                    padding: 5px 15px
+                    margin-left: 20px
+                .up_img
+                    // opacity: 0
+                    // position: absolute
+                    // position: fixed
+                    // left: -100%
+                .look_img
+                    margin-bottom: 20px
+                .re_web
+                    margin-top: 40px
+                    padding: 5px 15px
+                    margin-left: 20px
+            .add_form
+                .number
+                    &::-webkit-outer-spin-button
+                        -webkit-appearance: none
+                    &::-webkit-inner-spin-button
+                        -webkit-appearance: none
+                    [type="number"]
+                        -moz-appearance: textfield
+
+        .right_form
+            width: 60%
+            margin: 40px 0px
+            padding-right: 40px
+            table
+                width: 100%
+                th
+                    border: solid 1px black
+                    padding: 10px
+                    font-size: 16px
+                    font-weight: 300
+                    text-align: center
+                    // display: block
+                .see_img
+                    width: 150px
+                    img
+                        width: 100%
+                .num
+                    width: 10px
+                thead
+                    width: 100%
+                    tr
+                        width: 100%
+                        th
+                            padding: 0px
+                        .checkbox
+                            width: 30px
+                        .th_btn
+                            width: 100px
+                tbody
+                    width: 100%
+                    tr
+                        .th_btn
+                            width: 100px
+                        th
+                            padding: 5px 5px
+                            a
+                                font-size: 14px
+                                margin: 0px 10px
+                    button 
+                        font-size: 12px
+                        padding: 3px 8px
+                        margin: 0px 5px
+            .btn_action
+                margin: 10px 0px
+                button
+                    font-size: 14px
+

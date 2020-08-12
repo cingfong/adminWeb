@@ -1,0 +1,220 @@
+
+//css 順序
+//位置=>定位=>背景顏色=>文字=>框線=>大小
+*
+    position: relative
+    margin: 0px
+    padding: 0px
+a
+    &:hover
+        text-decoration: none
+body,html
+body
+    .content
+        padding-left: 230px
+        padding-top: 80px
+        background-color: #eee
+        min-height: 100vh
+        display: flex
+        .alert
+            position: absolute
+            padding: 5px 30px
+        .title
+            z-index: 10
+            width: calc(100% - 230px )
+            display: flex
+            border-bottom: solid 1px #ddd
+            flex-direction: row
+            position: absolute
+            .title_li
+                color: #333
+                width: 40%
+                flex-shrink: 0
+                text-align: center
+                padding: 10px 0px
+                color: #aaa
+            .active
+                color: #333
+        .left_form
+            width: 40%
+            color: #333
+            margin: 40px 0px
+            h3
+                font-size: 32px
+            h5
+                font-size: 22px
+            form
+                margin-top: 40px
+                p
+                    margin-top: 20px
+                input
+                    width: 250px
+                    margin-left: 30px
+                    background-color: rgba(white,0)
+                    border: 0px
+                    border-radius: 0px
+                    border-bottom: solid 1px #333
+                .re_web
+                    margin-top: 40px
+                    padding: 5px 15px
+                    margin-left: 20px
+                #img
+                    margin-bottom: 20px
+                    display: inline-block
+                .number
+                    &::-webkit-outer-spin-button
+                        -webkit-appearance: none
+                    &::-webkit-inner-spin-button
+                        -webkit-appearance: none
+                    [type="number"]
+                        -moz-appearance: textfield
+                .alert
+                    position: relative
+                    display: inline-block
+                    margin-left: 30px
+                .look_img
+                    margin-bottom: 20px
+                button
+                    margin-top: 40px
+                    padding: 5px 15px
+                    margin-left: 20px
+                .tab-pane
+                    .del_num
+                        // left: 90%
+                        width: 1px
+                        height: 1px
+                        left: -500px
+                        background-color: red
+                        position: fixed
+            .file_control
+                display: flex
+                margin: 20px 0px
+                flex-direction: row
+                a
+                    border-bottom: solid 1px #777
+                    width: 45%
+                    text-align: center
+                    color: #aaa
+                .active
+                    color: #333
+
+        .right_form
+            width: 60%
+            float: left
+            margin: 40px 0px
+            padding-right: 40px
+            table
+                width: 100%
+                th
+                    border: solid 1px black
+                    padding: 5px
+                    font-size: 16px
+                    font-weight: 300
+                    text-align: center
+                thead
+                    width: 100%
+                    tr
+                        width: 100%
+                        .checkbox
+                            width: 30px
+                            flex-basis: 0
+                tbody
+                    width: 100%
+                    tr
+                    button
+                        font-size: 12px
+                        padding: 3px 8px
+                        margin: 0px 5px
+                    .min_icon
+                        width: 70px
+                        img
+                            width: 70px
+                    .see_img
+                        width: 150px
+                    .products_name
+                        width: 80px
+                    .num
+                        width: 25px
+                    .btn_ul
+                        // width: 180px
+                        .btn
+                            margin: 0px 20px
+                            &:first-child
+                                margin-right: 0px
+                    img
+                        width: 100%
+            .btn_action
+                margin: 10px 0px
+                button
+                    font-size: 14px
+
+        .table
+            width: 100%
+            .tab-pane
+            .left_form
+                width: 30%
+                float: left
+                color: #333
+                margin: 80px 0px
+                h3
+                    font-size: 32px
+                h5
+                    font-size: 22px
+                form
+                    margin-top: 40px
+                    p
+                    input
+                        width: 250px
+                        margin-left: 30px
+                        background-color: rgba(white,0)
+                        border: 0px
+                        border-radius: 0px
+                        border-bottom: solid 1px #333
+                        color: #999
+                    button
+                        margin-top: 40px
+                        padding: 5px 15px
+                        margin-left: 20px
+
+            .right_form
+                width: 70%
+                margin: 80px 0px
+                float: left
+                table
+                    width: 100%
+                    th
+                        border: solid 1px black
+                        padding: 10px
+                        font-size: 16px
+                        font-weight: 300
+                    thead
+                        width: 100%
+                        tr
+                            width: 100%
+                            .checkbox
+                                width: 30px
+                                flex-basis: 0
+                            .th_btn
+                                width: 130px
+                    tbody
+                        width: 100%
+                        button
+                            font-size: 12px
+                            padding: 3px 8px
+                            margin: 0px 5px
+                .btn_action
+                    margin: 10px 0px
+                    button
+                        font-size: 14px
+@keyframes openI
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes closeI
+    0%
+        transform: rotate(90deg)
+    100%
+        transform: rotate(0deg)
+
+
